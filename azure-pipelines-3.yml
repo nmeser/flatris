@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool:'Nezih'
+pool: 'Nezih'
 
 steps:
 - task: NodeTool@0
