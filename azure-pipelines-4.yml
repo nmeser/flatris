@@ -21,7 +21,7 @@ variables:
   environmentName: 'nezih'
  
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  pool: 'Default'
   
 stages:
 - stage: Archive
@@ -29,8 +29,7 @@ stages:
   jobs:  
   - job: Archive
     displayName: Archive
-    pool:
-      vmImage: $(vmImageName)
+    pool: 'Default'
     steps:   
     - task: AzureAppServiceSettings@1
       inputs:
